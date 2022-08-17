@@ -1,7 +1,7 @@
 {
   "name": "@different/factory-girl",
   "description": "A factory library for Node.js and JavaScript inspired by factory_girl",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "author": [
     "@aexmachina",
     "@chetanism"
@@ -81,7 +81,6 @@
   "scripts": {
     "lint": "eslint src test tools",
     "test": "NODE_ENV=test mocha",
-    "test:cover": "NODE_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
-    "build": "node tools/build"
+    "test:cover": "NODE_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
   }
 }

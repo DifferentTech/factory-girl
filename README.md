@@ -9,7 +9,7 @@
 Node.js:
 
 ```bash
-npm install factory-girl
+npm install @different/factory-girl
 ```
 
 To use `factory-girl` in the browser or other JavaScript environments, there are
@@ -23,7 +23,7 @@ user factory.
 Here's the crash course:
 
 ```javascript
-const factory = require('factory-girl').factory;
+const factory = require('@different/factory-girl').factory;
 const User    = require('../models/user');
 
 factory.define('user', User, {
@@ -250,7 +250,7 @@ specific models, or as the 'default adapter', which is used for any models for w
 adapter has not been specified. See the adapter docs for usage, but typical usage is:
 
 ```javascript
-const FactoryGirl = require('factory-girl');
+const FactoryGirl = require('@different/factory-girl');
 const factory = FactoryGirl.factory;
 const adapter = new FactoryGirl.MongooseAdapter();
 

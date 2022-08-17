@@ -1,7 +1,7 @@
 {
-  "name": "factory-girl",
+  "name": "@different/factory-girl",
   "description": "A factory library for Node.js and JavaScript inspired by factory_girl",
-  "main": "./src/index",
+  "main": "./dist/index.js",
   "author": [
     "@aexmachina",
     "@chetanism"
@@ -76,13 +76,12 @@
     "should": "^6.0.3",
     "sinon": "^7.1.1",
     "sinon-chai": "^3.2.0",
-    "sqlite3": "^3.1.4"
+    "sqlite3": "5.0.11"
   },
   "scripts": {
     "lint": "eslint src test tools",
     "test": "NODE_ENV=test mocha",
     "test:cover": "NODE_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
-    "build": "node tools/build",
-    "prepublish": "npm run test && npm run build"
+    "build": "node tools/build"
   }
 }
